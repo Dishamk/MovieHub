@@ -1,0 +1,48 @@
+/* ErrorPage.css */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.error-card {
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 12px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.error-icon {
+  font-size: 60px;
+  color: #f44336;
+  margin-bottom: 16px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.error-message {
+  margin: 16px 0;
+  color: #555;
+  animation: fadeInUp 1.2s ease-out;
+}
+.loading-spinner {
+  margin-top: 20px;
+}

@@ -1,0 +1,64 @@
+
+
+.search-page {
+  padding-top: 80px;
+  min-height: 100vh;
+  color: #000;
+}
+
+.movie-container {
+  padding: 40px 0;
+}
+
+.movie-card {
+  background-color: #fff;
+  color: #000;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.spinner-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.error-text {
+  color: red;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+  background: none;
+  padding: 0;
+  border: none;
+}

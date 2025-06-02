@@ -1,0 +1,82 @@
+.home-container {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://media.istockphoto.com/photos/cinema-film-background-picture-id685927564?k=6&m=685927564&s=170667a&w=0&h=rBWFPqZ75BjlKnFOylKlqUGgqTVT4KYnkaGrlJVcyYs=');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-bar {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.85);
+  margin: 0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-buttons button {
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.welcome-box {
+  margin: auto;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+  max-width: 700px;
+}
+
+.welcome-message {
+  font-size: 40px;
+  font-weight: 700;
+  color: #111; 
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #e53935;
+}
+
+.sub-message {
+  font-size: 22px;
+  color: #222; 
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+.extra-message {
+  font-size: 18px;
+  color: #333; 
+  line-height: 1.6;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

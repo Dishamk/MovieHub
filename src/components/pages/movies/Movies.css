@@ -1,0 +1,101 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix the header to the top */
+header, .header, .MuiAppBar-root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 40px;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 1000;
+}
+
+/* Wrapper to push content below fixed header */
+.movies-page {
+  padding-top: 70px; /* Reduced to bring content up */
+  padding-bottom: 80px; /* Added to ensure pagination is visible */
+}
+
+/* Main container */
+.movies-container {
+  padding: 0 20px;
+}
+
+/* Section title styling */
+.section-title {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px; /* Reduced spacing */
+  font-size: 1.4rem; /* Slightly smaller title */
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.movie-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 5px 0;
+  scroll-behavior: smooth;
+}
+
+.movie-card {
+  min-width: 230px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-image {
+  height: 270px;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.heart-icon {
+  transition: transform 0.2s ease;
+}
+
+.heart-icon:hover {
+  transform: scale(1.2);
+}
+
+.pagination-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-bottom: 20px; /* Ensures it's not cut off */
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
